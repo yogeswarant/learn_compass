@@ -1,0 +1,14 @@
+/* line 2, ../sass/style.scss */
+.rounded_box {
+  width: 200px;
+  height: 200px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #ea6c0c;
+  text-align: center;
+  padding-top: 20px;
+}

@@ -1,0 +1,10 @@
+@import 'compass';
+.rounded_box {
+	width: 200px;
+	height: 200px;
+	@include border-radius();
+	@include box-sizing();
+	background-color: #ea6c0c;
+	text-align: center;
+	padding-top: 20px;
+}
