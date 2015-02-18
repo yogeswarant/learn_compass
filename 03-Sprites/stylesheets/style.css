@@ -1,0 +1,27 @@
+/* line 64, group/*.png */
+.group-sprite, .group-bird_32_gray, .group-bitbucket_22_gray, .group-email {
+  background-image: url('../images/group-s678b63fff0.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.group-bird_32_gray {
+  background-position: 0 0;
+}
+
+/* line 84, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.group-bitbucket_22_gray {
+  background-position: 0 -32px;
+}
+
+/* line 84, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.group-email {
+  background-position: 0 -54px;
+}
+
+/* line 6, ../sass/style.scss */
+.box {
+  height: 25px;
+  width: 30px;
+  background-color: red;
+}

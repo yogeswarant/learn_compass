@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Learn Compass</title>
+	<link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+	<header>
+		<h1>Sprites using compass</h1>
+	</header>
+	<h3>NOTE: This is not a valid sprite image, just using it for the sake of demonstration.</h3>
+	<div class="box group-bird_32_gray"></div>
+	<br><br>
+	<div class="box group-bitbucket_22_gray"></div>
+	<br><br>
+	<div class="box group-email"></div>
+	<br><br>
+	<p>Origin image</p>
+	<img src="images/group-s678b63fff0.png" alt="">
+	<p>
+		In config.rb set <strong>relative_assets = true</strong>.
+		<br>
+		Group the files in a sub directory, only then sprite image will be created with the directory name.
+		<br><br>
+		<strong>@include all-&lt;dirname&gt;-sprites;</strong>
+		does the magic of creating required css class with appropriate background-position.
+	</p>
+	<pre>
+@import 'compass';
+
+@import "group/*.png";
+@include all-group-sprites;
+
+.box {
+	height: 25px;
+	width: 30px;
+	background-color: red;
+}
+
+	</pre>
+</body>
+</html>
