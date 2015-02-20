@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Learn Compass</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+</head>
+<body>
+	<header>
+		<h1>Advances sprites</h1>
+	</header>
+	<p>Hover image can be create just my naming the file with _hover prefix.
+		Example, <strong>twitter_hover.png</strong> will be hover image of <strong>twitter.png</strong>.
+	</p>
+	<secion class="main">
+		<div class="box group-twitter">
+		</div>
+	</section>
+	<p>Create with layout <strong>diagonal</strong>.  Other layouts possible are <strong>horizontal</strong>, <strong>vertical(default)</strong> and <strong>smart</strong>.</p>
+	<img src="images/group-seb050fe32b.png">
+
+	<pre>
+@import "base";
+
+$group-layout:diagonal;
+@import "group/*.png";
+
+@include group-sprites(twitter);
+
+.box {
+	height: 30px;
+	width: 30px;
+}
+	</pre>
+</body>
+</html>

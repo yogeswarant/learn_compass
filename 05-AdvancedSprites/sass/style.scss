@@ -1,0 +1,11 @@
+@import "base";
+
+$group-layout:diagonal;
+@import "group/*.png";
+
+@include group-sprites(twitter);
+
+.box {
+	height: 30px;
+	width: 30px;
+}
