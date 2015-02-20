@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Learn Compass</title>
+	<link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+	<header>
+		<h1>04. Base SCSS and Horizontal list</h1>
+	</header>
+	<p>
+		Have all the imports in _base.scss and import only that in style.scss
+	</p>
+	<section class="main">
+		<ul class="myhlist">
+			<li>Item-1</li>
+			<li>Item-2</li>
+			<li>Item-3</li>
+		</ul>
+		<pre>
+@import "base";
+
+.myhlist {
+	@include horizontal-list;
+}
+		</pre>
+	</section>
+</body>
+</html>
